@@ -1,0 +1,163 @@
+.conteiner{
+   min-width: 1694px;
+    min-height: 972px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/1647023971_1-kartinkin-net-p-kartinki-futbolnogo-polya-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+   
+   
+    
+}
+.ballwrap{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    
+    
+    animation-name:  bounce, moveLeft;
+    animation-duration:  6s, 6s;
+    animation-iteration-count: 1 ;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+}
+
+
+   .ball{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: none;
+   
+    animation-name:  rotation;
+    animation-duration:  6s;
+    animation-iteration-count: 1 ;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+    
+    
+}
+
+
+
+@keyframes bounce {
+  0% {top: 0px;
+   
+    box-shadow: 0 750px 20px  rgba(0, 0, 0, 0.107);
+  }
+
+  
+
+  25% {
+    top: 500px;
+    width: 100px;
+    height: 100px;
+   
+    
+  }
+
+
+  26%{
+    top: 520px;
+    width: 110px;
+    height: 80px;
+    box-shadow: 0 10px 10px  rgb(0, 0, 0);
+  }
+  27%{
+    
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  48% {
+    top: 140px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 560px 20px 0 rgba(0, 0, 0, 0.107);
+  }
+
+  66% {
+    top: 500px;
+    width: 100px;
+    height: 100px;
+  }
+
+  67%{
+    top: 520px;
+    width: 110px;
+    height: 80px;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+  }
+
+  68%{
+    width: 100px;
+    height: 100px;
+  }
+
+
+  
+  84% {
+    top: 300px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 300px 20px 0 rgba(0, 0, 0, 0.107);
+  }
+
+
+
+
+  95% {
+    top: 500px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+  }
+  96%{
+    top: 505px;
+    width: 105px;
+    height: 90px;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+  }
+  
+  97% {
+    top: 500px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+  }
+100%{
+    top: 500px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+}
+}
+
+@keyframes moveLeft {
+  from {left: 0;}
+  to   {left: 75%;
+    
+  }
+  
+
+}
+@keyframes rotation {
+    from {}
+    25%  {transform: rotate(360deg);}
+    27%  {transform: rotate(360deg);}
+    
+    66%  {transform: rotate(720deg);}
+    68%  {transform: rotate(720deg);}
+    96%   {transform: rotate(900deg);}
+    to    {transform: rotate(960deg);}
+    
+  
+  }
